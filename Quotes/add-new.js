@@ -30,3 +30,9 @@ document.getElementById("addNew").addEventListener("click", function () {
         console.log("error:", error);
       });
   });
+
+
+
+  document.querySelector("#viewAllQuotes").addEventListener("click", function(){
+    window.location.href = "index.html"
+  })

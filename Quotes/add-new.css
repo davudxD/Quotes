@@ -1,12 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+    
     }
 
 body {
     height: 100vh;
     width: 100%;
-    background-image: url('books.jpg');
+    background-image: url("123.jpg ");
     background-size: cover;
     background-position: center;
     }
@@ -20,8 +21,7 @@ body {
 
 button {
     padding: 15px;
-    width: 16%;
-    margin-left: 180px;
+    width: 18%;
     text-align: center;
     background-image: url('flower.jpg');
     background-size: cover;
@@ -33,23 +33,53 @@ button {
     color: rgba(5, 18, 43, 0.862);
     box-shadow: 20px 20px 15px rgba(5, 18, 43, 0.862);
     cursor: pointer;
+    margin: 40px 8px;
+    }
+
+    #addNew:hover {
+        background-color: transparent;
+        transition: 0.8s;
+        color: white;
+        font-family: cursive;
+    }
+
+    #viewAllQuotes{
+        width: 18%;
+        
+    }
+
+    #viewAllQuotes:hover{
+        background-color: transparent;
+        transition: 0.8s;
+        color: white;
+        font-family: cursive;
     }
 
 input {
     padding: 17px;
     width: 35%;
     font-size: 20px;
-    border: 3px solid rgb(124, 156, 156);
+    border: 3px solid white;
     border-radius: 10px;
     background-image: url('flower.jpg');
     background-size: cover;
     background-position: bottom;
     box-shadow: 20px 20px 15px rgba(5, 18, 43, 0.862);
+    background-color: transparent;
+    color: white;
+    font-family: cursive;
     }
 
 ::placeholder {
     color: rgba(5, 18, 43, 0.862);
     font-size: 19px;
-    font-family: cursive;
     font-weight: bold;
+    font-family: monospace;
+    }
+
+    h2 {
+        margin-top: 20px;
+        color: white;
+        font-family: cursive;
+        font-size: 21px;
     }

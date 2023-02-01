@@ -31,10 +31,13 @@ function renderQuotes() {
       item.quoteText + " - " + item.quoteAuthor + " - " + item.quoteSource;
     quoteLikesEl.textContent = "Likes: " + item.likes;
 
+    
+
     likeEl.src = "like.png";
     likeEl.style = "width: 30px";
     likeEl.onclick = function () {
       likeQuote(item._id);
+      
     };
 
     deleteEl.src = "remove.png";
