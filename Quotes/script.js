@@ -70,10 +70,12 @@ async function getQuotes() {
     });
 }
 
+
 getQuotes();
 
 document.getElementById("search").addEventListener("keydown", function () {
   var searchValue = document.getElementById("search").value;
+  document.getElementById("search").style.backgroundColor = "white"
   quotes = allQuotes.filter(function (item, index) {
     if (item.quoteText) {
       return item.quoteText.toLowerCase().includes(searchValue.toLowerCase());
@@ -81,5 +83,17 @@ document.getElementById("search").addEventListener("keydown", function () {
       return false;
     }
   });
+
+  if(searchValue === ""){
+    document.getElementById("search").style.backgroundColor = "transparent"
+
+  }
+  else{
+    document.getElementById("search").style.backgroundColor = "white"
+  }
+
   renderQuotes();
 });
+
+// document.getElementById("search").addEventListener("click",function(){
+//   document.getElementById("search").style.backgroundColor = "white"})
